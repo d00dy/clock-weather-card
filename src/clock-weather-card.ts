@@ -509,11 +509,11 @@ export class ClockWeatherCard extends LitElement {
     if (aqi == null) {
       return null
     }
-    if (aqi <= 50) return 'green'
-    if (aqi <= 100) return 'yellowgreen'
-    if (aqi <= 150) return 'orange'
-    if (aqi <= 200) return 'red'
-    if (aqi <= 300) return 'purple'
+    if (aqi <= 2) return 'green'
+    if (aqi <= 5) return 'yellowgreen'
+    if (aqi <= 8) return 'orange'
+    if (aqi <= 10) return 'red'
+    if (aqi >= 11) return 'magenta'
     return 'maroon'
   }
 
